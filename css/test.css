@@ -1,0 +1,10 @@
+/* Universal Styles */
+body {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}

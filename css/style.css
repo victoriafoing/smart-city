@@ -1,7 +1,7 @@
 /* Universal Styles */
-
 body {
-  font-family: Vollkorn;
+  font-family: Helvetica;
+  font-weight: normal;
   font-size: 22px;
   color: seashell;
   background-color: black;
@@ -34,7 +34,7 @@ h2, h4 {
 .container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /* Header */
