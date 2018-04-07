@@ -94,6 +94,7 @@ header img {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  margin: 15px;
 }
 
 .dropdown-content {
