@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 body {
-  font-family: Helvetica;
+  font-family: Vollkorn;
   font-size: 22px;
   color: seashell;
   background-color: black;
@@ -52,6 +52,19 @@ header {
 header img {
   height: 100px;
   padding-left: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.logo span {
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 /* Mission */
