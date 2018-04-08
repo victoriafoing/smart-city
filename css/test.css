@@ -13,6 +13,7 @@ body span {
   text-align: left;
 }
 
+/* Header */
 header {
   top: 0;
   background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
@@ -23,7 +24,6 @@ header {
   height: 150px;
   width: 100%;
   z-index: 1;
-  justify-content: center;
 }
 
 .logo {
@@ -38,11 +38,13 @@ header {
   margin: 20px auto 0px auto;
 }
 
+/* Navigation bar */
+
 .links {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 200px auto 0px auto;
+  margin: 150px auto 0px auto;
 }
 
 .links a {
@@ -91,10 +93,12 @@ header {
     display: block;
 }
 
+/* Region title and potential map? */
 .area {
   margin: 30px auto 0px auto;
 }
 
+/* Images */
 .image {
   display: flex;
   flex-direction: column;
@@ -135,3 +139,5 @@ span {
   margin: 15px 0px 10px 15px;
   font-size: 16px;
 }
+
+/* Footer */
