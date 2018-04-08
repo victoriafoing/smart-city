@@ -164,6 +164,25 @@ span {
   font-size: 16px;
 }
 
+/* Mission */
+.mission p {
+  font-family: 'Helvetica';
+  font-weight: normal;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.mission h4 {
+  margin: 15px; auto;
+}
+
+.icon img {
+  height: 50px;
+  width: auto;
+}
+
+/* Contact */
+
 /* Footer */
 
 .copyright span {
