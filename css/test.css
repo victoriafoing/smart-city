@@ -28,7 +28,6 @@ header {
 
 .logo {
   display: flex;
-  height: 150px;
   width: 100%;
   justify-content: center;
 }
@@ -43,7 +42,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 150px auto 0px auto;
+  margin: 200px auto 0px auto;
 }
 
 .links a {
