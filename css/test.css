@@ -1,6 +1,6 @@
 /* Universal Styles */
 body {
-  font-family: Helvetica Neue;
+  font-family: 'Helvetica';
   font-weight: normal;
   font-size: 22px;
   color: seashell;
@@ -15,25 +15,27 @@ body span {
 
 header {
   top: 0;
-  background-color: black;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
   position: fixed;
-  height: 100px;
+  height: 110px;
   width: 100%;
-  border-bottom: 1px solid seashell;
   z-index: 1;
   justify-content: center;
 }
 
-header img {
+.logo img {
   height: 50px;
   width: 50px;
   margin: 20px auto 0px auto;
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
-  font-family: Helvetica Neue;
+  font-family: 'Helvetica';
   margin: 10px auto;
 }
 
@@ -46,6 +48,9 @@ h1 {
 }
 
 .links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin: 120px auto 0px auto;
 }
 
@@ -53,6 +58,7 @@ h1 {
   font-size: 16px;
   color: white;
   padding: 0px 10px;
+  opacity: 0.5;
 }
 
 /* Dropdown */
@@ -86,7 +92,7 @@ h1 {
   font-size: 16px;
   padding: 12px 16px;
   text-decoration: none;
-  font-family: Helvetica neue;
+  font-family: 'Impact', 'Helvetica Neue';
   display: block;
 }
 
@@ -98,7 +104,9 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 20px auto;
-  width: 250px;
+  width: 60%;
+  background-color: black;
+  box-shadow: 2px 5px black;
 }
 
 .image.title {
@@ -106,26 +114,30 @@ h1 {
 }
 
 img {
-  width: 250px;
-  height: 250px;
-  margin: 5px 0px 15px auto;
-  border-radius: 25px;
+  width: 100%;
+  height: auto;
+  margin: 5px auto 15px auto;
+  border-radius: 10px;
 }
 
 span {
   display: block;
-  font-family: Helvetica Neue;
+  font-family: 'Helvetica';
   font-size: 16px;
   font-weight: lighter;
   width: 250px;
   text-align: left;
+  color: white;
 }
 
 .text span {
-  margin: 0px auto;
+  margin: 0px auto auto 0px;
+  text-align: left;
+  opacity: 0.5;
 }
 
 .title {
   font-weight: bold;
-  margin: 5px 0px;
+  margin: 15px 0px 10px 15px;
+  font-size: 16px;
 }
