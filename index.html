@@ -25,7 +25,7 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="dropdown">
+<!--        <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">--Select a Region--</button>
           <div id="myDropdown" class="dropdown-content">
             <a href="#">Inner Sydney</a>
@@ -36,31 +36,26 @@
             <a href="#">Regional South</a>
           </div>
         </div>
-        
-<script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+-->
+        <div class="dropdown">
+        <form>
+            <select name="region">
+              <option disabled selected value style="display:none">--Select a region--</option>
+              <option value="SYD_MET">Inner Sydney</option>
+              <option value="SYD_NORTH">Sydney North </option>
+              <option value="SYD_WEST">Sydney West </option>
+              <option value="SYD_SOUTH">Sydney South </option>
+              <option value="REG_NORTH">Regional North</option>
+              <option value="REG_SOUTH">Regional South</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
 
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 area">
-        <h1>Chosen region</h1>
+        <h4>Chosen region</h4>
       </div>
     </div>
     <div class="row">
