@@ -26,19 +26,6 @@ header {
   justify-content: center;
 }
 
-.logo img {
-  height: 50px;
-  width: 50px;
-  margin: 20px auto 0px auto;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 20px;
-  font-family: 'Helvetica';
-  margin: 10px auto;
-}
-
 .logo {
   display: flex;
   height: 100px;
@@ -47,11 +34,17 @@ h1 {
   flex-direction: column;
 }
 
+.logo img {
+  height: 120px;
+  width: 472px;
+  margin: 20px auto 0px auto;
+}
+
 .links {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 120px auto 0px auto;
+  margin: 100px auto 0px auto;
 }
 
 .links a {
@@ -100,20 +93,23 @@ h1 {
     display: block;
 }
 
+.area {
+  margin: 30px auto 0px auto;
+}
+
 .image {
   display: flex;
   flex-direction: column;
   margin: 20px auto;
   width: 60%;
-  background-color: black;
-  box-shadow: 2px 5px black;
+  border-radius: 10px;
 }
 
 .image.title {
   font-weight: bold;
 }
 
-img {
+.image img {
   width: 100%;
   height: auto;
   margin: 5px auto 15px auto;
