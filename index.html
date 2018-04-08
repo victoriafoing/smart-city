@@ -26,16 +26,36 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--Select a region--</button>
-          <div class="dropdown-content">
-            <option value="SYD_MET">Inner Sydney</option>
-            <option value="SYD_NORTH">Sydney North </option>
-            <option value="SYD_WEST">Sydney West </option>
-            <option value="SYD_SOUTH">Sydney South </option>
-            <option value="REG_NORTH">Regional North</option>
-            <option value="REG_SOUTH">Regional South</option>
+          <button onclick="myFunction()" class="dropbtn">--Select a Region--</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Inner Sydney</a>
+            <a href="#">Sydney North</a>
+            <a href="#">Sydney West</a>
+            <a href="#">Sydney South</a>
+            <a href="#">Regional North</a>
+            <a href="#">Regional South</a>
           </div>
         </div>
+        
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
       </div>
     </div>
     <div class="row">
@@ -104,7 +124,11 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 copyright">
-        <footer>© Copyright 2018</footer>
+        <footer>
+          <div class="copyright">
+            <span>© Copyright 2018<span>
+          </div>
+        </footer>
       </div>
     </div>
   </div>
